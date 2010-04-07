@@ -14,8 +14,11 @@
 {
 	IBOutlet UILabel* weaponSelection;
 	IBOutlet UITextField* myField;
+	NSString* weaponText;
 	
 	GameBumpConnector* bumpObject;
 }
+
+- (NSString*) giveWeapon;
 
 @end

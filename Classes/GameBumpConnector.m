@@ -44,7 +44,8 @@
 	//But you can use any type of data you like, as long as you convert it to an NSData object.
 	NSMutableDictionary *weaponDict = [[NSMutableDictionary alloc] initWithCapacity:5];
 	//[weaponDict setObject:[NSString stringWithFormat:@"%d", column]  forKey:@"MOVED_COLUMN"];
-	[weaponDict setObject:[NSString stringWithFormat:@"this is a test"]  forKey:@"WEAPON"];
+	weaponVariable = [bHeadGame giveWeapon];
+	[weaponDict setObject:[NSString stringWithFormat:@"%@", weaponVariable]  forKey:@"WEAPON"];
 	
 	//Now we need to package our move dictionary up into an NSData object so we can send it up to Bump.
 	//We'll do that with with an NSKeyedArchiver.
@@ -55,8 +56,9 @@
 	//Calling send will have bump send the data up to the other user's mailbox.
 	//The other user will get a bumpDataReceived: callback with an identical NSData* chunk shortly.
 	//packetsAttempted++;
-	NSLog(@"bumpDidConnect");
-	[bumpObject send:weaponChunk];	
+	[bumpObject send:weaponChunk];
+	NSLog(@"bump did connect");
+	
 }
 
 - (void) bumpDataReceived:(NSData *)chunk{
@@ -92,13 +94,12 @@
 	//		//TODO: notify the subsystem that the opponent has quit
 	//		// restart the app
 	//	}
-	[self stopBump];
 }
 
 - (void) bumpSendSuccess{
 	//This callback method lets you know that the [Bump send:] method that you called was succesful in sending your chunk up to Bump's server.
 	//This doesn't guarantee that the other handset has received the chunk.
-	NSLog(@"bumpSendSuccess");
+	NSLog(@"bump send success");
 }
 
 - (void) bumpDidDisconnect:(BumpDisconnectReason)reason{
@@ -129,6 +130,7 @@
 		[alert show];
 		[alert release];
 	}*/
+	NSLog(@"bump did disconnect");
 }
 
 - (void) bumpConnectFailed:(BumpConnectFailedReason)reason{

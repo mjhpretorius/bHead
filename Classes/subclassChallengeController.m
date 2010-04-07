@@ -12,7 +12,6 @@
 
 @implementation subclassChallengeController
 
-
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -23,7 +22,8 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	bumpObject = [[[GameBumpConnector alloc] init] autorelease];
+	bumpObject = [[GameBumpConnector alloc] init];
+	bumpObject.bHeadGame = self; // dragged from gameconnector to bhead
 	[bumpObject startBump];
     [super viewDidLoad];
 }
@@ -41,7 +41,7 @@
 	UIButton* wb = (UIButton*)[notification object];
 	weaponSelection.text = [wb currentTitle];
 	//NSLog([NSString stringWithFormat:@"Sent: %@", [wb currentTitle]]);
-	
+	weaponText = [wb currentTitle];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,6 +49,10 @@
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
+}
+
+- (NSString*)giveWeapon{
+	return weaponText;
 }
 
 - (void)viewDidUnload {
