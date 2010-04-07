@@ -20,7 +20,7 @@
     }
     return self;
 }
-*/
+
 
 /*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
@@ -49,15 +49,19 @@
 	// e.g. self.myOutlet = nil;
 }
 
-- (IBAction) logData:(id)sender
+- (IBAction) logData:(UIButton*)sender
 {
-	NSLog(@"Button Pushed");
 	subclassChallengeController *weaponView = [[subclassChallengeController alloc] initWithNibName:@"subclassChallengeController" bundle:nil];
 	[self.navigationController pushViewController:weaponView animated:YES];
 	[weaponView release];
+	
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"weaponButton" object:sender];
+	
+	NSLog(@"Button Pushed name: %@", [sender currentTitle]);
 }
 
-- (void)dealloc {
+- (void)dealloc 
+{
     [super dealloc];
 }
 

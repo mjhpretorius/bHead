@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ScoreController : UIViewController {
-
+@interface ScoreController : UIViewController 
+{
+	
 }
+
 
 @end

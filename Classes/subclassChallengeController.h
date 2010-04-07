@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GameBumpConnector.h"
 
 
-@interface subclassChallengeController : UIViewController {
-
+@interface subclassChallengeController : UIViewController <UITextFieldDelegate>
+{
+	IBOutlet UILabel* weaponSelection;
+	IBOutlet UITextField* myField;
+	
+	GameBumpConnector* bumpObject;
 }
 
 @end
