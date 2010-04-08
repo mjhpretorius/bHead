@@ -41,7 +41,8 @@
 	UIButton* wb = (UIButton*)[notification object];
 	weaponSelection.text = [wb currentTitle];
 	//NSLog([NSString stringWithFormat:@"Sent: %@", [wb currentTitle]]);
-	weaponText = [wb currentTitle];
+	otherweaponText = [wb currentTitle];
+	yourweaponText = [wb currentTitle];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,8 +52,12 @@
 	// Release any cached data, images, etc that aren't in use.
 }
 
-- (NSString*)giveWeapon{
-	return weaponText;
+- (NSString*)giveotherWeapon{
+	return otherweaponText;
+}
+
+- (NSString*)giveyourWeapon{
+	return yourweaponText;
 }
 
 - (void)viewDidUnload {

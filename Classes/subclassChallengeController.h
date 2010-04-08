@@ -14,11 +14,14 @@
 {
 	IBOutlet UILabel* weaponSelection;
 	IBOutlet UITextField* myField;
-	NSString* weaponText;
+	NSString* otherweaponText;
+	NSString* yourweaponText;
 	
 	GameBumpConnector* bumpObject;
 }
 
-- (NSString*) giveWeapon;
+- (NSString*) giveotherWeapon;
+- (NSString*) giveyourWeapon;
+
 
 @end

@@ -44,9 +44,8 @@
 	//But you can use any type of data you like, as long as you convert it to an NSData object.
 	NSMutableDictionary *weaponDict = [[NSMutableDictionary alloc] initWithCapacity:5];
 	//[weaponDict setObject:[NSString stringWithFormat:@"%d", column]  forKey:@"MOVED_COLUMN"];
-	weaponVariable = [bHeadGame giveWeapon];
-	[weaponDict setObject:[NSString stringWithFormat:@"%@", weaponVariable]  forKey:@"WEAPON"];
-	
+	NSString* otherweaponVariable = [bHeadGame giveotherWeapon];
+	[weaponDict setObject:[NSString stringWithFormat:@"%@", otherweaponVariable]  forKey:@"otherWEAPON"];
 	//Now we need to package our move dictionary up into an NSData object so we can send it up to Bump.
 	//We'll do that with with an NSKeyedArchiver.
 	NSData *weaponChunk = [NSKeyedArchiver archivedDataWithRootObject:weaponDict];
@@ -67,10 +66,15 @@
 	//[self printDict:responseDictionary];
 	
 	//	//responseDictionary no contains an Identical dictionary to the one that the other user sent us
-	NSString *weaponChoice = [responseDictionary objectForKey:@"WEAPON"];
+	otherweaponChoice = [responseDictionary objectForKey:@"otherWEAPON"];
+	yourweaponChoice = [bHeadGame giveyourWeapon];
 	//	NSString *gameAction = [responseDictionary objectForKey:@"GAME_ACTION"];
 	//	
-	NSLog(@"weapon choice is %@", weaponChoice);
+	NSLog(@"the other players weapon choice is %@", otherweaponChoice);
+	NSLog(@"your weapon choice is %@", yourweaponChoice);
+	
+	NSString* result = [self resultFormula];
+	NSLog(@"you are a %@", result);
 	//	
 	//	if([gameAction isEqualToString:@"MOVE"]){
 	//		NSString *column = [responseDictionary objectForKey:@"MOVED_COLUMN"];
@@ -94,6 +98,27 @@
 	//		//TODO: notify the subsystem that the opponent has quit
 	//		// restart the app
 	//	}
+}
+
+- (NSString*)resultFormula{
+	// could make this shorter, but for debugging, I made it this way
+	if([otherweaponChoice isEqualToString: @"LIGHTSABER"] && [yourweaponChoice isEqualToString: @"SHOTGUN"]) 
+	{
+		return @"WINNER!";
+	}
+	if([otherweaponChoice isEqualToString: @"SHOTGUN"] && [yourweaponChoice isEqualToString: @"BROADSWORD"])
+	{
+		return @"WINNER!";
+	}
+	if([otherweaponChoice isEqualToString: @"BROADSWORD"] && [yourweaponChoice isEqualToString: @"LIGHTSABER"])
+	{
+		return @"WINNER!";
+	}
+	else 
+	{
+		return @"LOSER!";
+	}
+
 }
 
 - (void) bumpSendSuccess{
