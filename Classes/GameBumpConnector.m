@@ -74,7 +74,10 @@
 	NSLog(@"your weapon choice is %@", yourweaponChoice);
 	
 	NSString* result = [self resultFormula];
+	winorlose = result;
 	NSLog(@"you are a %@", result);
+	
+	[bHeadGame setLabels];
 	//	
 	//	if([gameAction isEqualToString:@"MOVE"]){
 	//		NSString *column = [responseDictionary objectForKey:@"MOVED_COLUMN"];
@@ -106,19 +109,33 @@
 	{
 		return @"WINNER!";
 	}
-	if([otherweaponChoice isEqualToString: @"SHOTGUN"] && [yourweaponChoice isEqualToString: @"BROADSWORD"])
+	else if([otherweaponChoice isEqualToString: @"SHOTGUN"] && [yourweaponChoice isEqualToString: @"BROADSWORD"])
 	{
 		return @"WINNER!";
 	}
-	if([otherweaponChoice isEqualToString: @"BROADSWORD"] && [yourweaponChoice isEqualToString: @"LIGHTSABER"])
+	else if([otherweaponChoice isEqualToString: @"BROADSWORD"] && [yourweaponChoice isEqualToString: @"LIGHTSABER"])
 	{
 		return @"WINNER!";
 	}
+	else if([otherweaponChoice isEqualToString:yourweaponChoice]) 
+	{
+		return@"TIE!";
+	}
+	
 	else 
 	{
 		return @"LOSER!";
 	}
 
+}
+
+- (NSString*) givewinorlose {
+	return winorlose;
+}
+
+- (NSString*) giveOpponentWeapon
+{
+	return otherweaponChoice;
 }
 
 - (void) bumpSendSuccess{

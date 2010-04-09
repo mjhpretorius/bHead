@@ -13,6 +13,8 @@
 @interface subclassChallengeController : UIViewController <UITextFieldDelegate>
 {
 	IBOutlet UILabel* weaponSelection;
+	IBOutlet UILabel* opponentSelection;
+	IBOutlet UILabel* gameOutcome;
 	IBOutlet UITextField* myField;
 	NSString* otherweaponText;
 	NSString* yourweaponText;
@@ -22,6 +24,7 @@
 
 - (NSString*) giveotherWeapon;
 - (NSString*) giveyourWeapon;
+- (void) setLabels;
 
 
 @end
