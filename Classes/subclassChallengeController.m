@@ -39,8 +39,12 @@
 - (void)changeLabel:(NSNotification*)notification
 {
 	UIButton* wb = (UIButton*)[notification object];
-	weaponSelection.text = [wb currentTitle];
+	weaponSelection.text = [NSString stringWithFormat:@"you picked %@", [wb currentTitle]];
+	opponentSelection.text = @"";
+	gameOutcome.text = @"";
 	//NSLog([NSString stringWithFormat:@"Sent: %@", [wb currentTitle]]);
+	
+	//Not needed?
 	otherweaponText = [wb currentTitle];
 	yourweaponText = [wb currentTitle];
 }
@@ -50,6 +54,12 @@
     [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
+}
+
+- (void)setLabels 
+{
+	opponentSelection.text = [NSString stringWithFormat:@"Your opponent used %@", [bumpObject giveOpponentWeapon]];
+	gameOutcome.text = [NSString stringWithFormat:@"You %@", [bumpObject givewinorlose]];
 }
 
 - (NSString*)giveotherWeapon{
