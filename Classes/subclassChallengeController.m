@@ -15,6 +15,8 @@
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+		//CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f); 
+		//bgImage = [[UIImageView alloc] initWithFrame:myImageRect];
 		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeLabel:) name:@"weaponButton" object:nil];
 	}
     return self;
@@ -60,24 +62,24 @@
 {
 	NSString* winorlose = [bumpObject givewinorlose];
 	
-	CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f); 
-	bgImage = [[UIImageView alloc] initWithFrame:myImageRect];
-	
-	if ([winorlose isEqualToString: @"WINNER"]) {
+	if ([winorlose isEqualToString:@"WINNER!"]) {
 		[bgImage setImage:[UIImage imageNamed:@"youlivebackground.png"]];
 	}
-	else if ([winorlose isEqualToString: @"LOSER"]) {
+	else if ([winorlose isEqualToString:@"LOSER!"]) 
+	{
 		[bgImage setImage:[UIImage imageNamed:@"youdiebackground.png"]];
-	} else {
+	} else 
+	{
 		[bgImage setImage:[UIImage imageNamed:@"youtiebackground.png"]];
 	}
-
-
-	[self.view addSubview:bgImage]; 
-	[self.view sendSubviewToBack:bgImage];
-
+	
 	opponentSelection.text = [NSString stringWithFormat:@"Your opponent used %@", [bumpObject giveOpponentWeapon]];
 	gameOutcome.text = [NSString stringWithFormat:@"You %@", winorlose];
+
+//	[self.view addSubview:bgImage]; 
+	[self.view sendSubviewToBack:bgImage];
+
+
 }
 
 - (NSString*)giveotherWeapon{

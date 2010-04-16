@@ -18,10 +18,8 @@
 	IBOutlet UITextField* myField;
 	NSString* otherweaponText;
 	NSString* yourweaponText;
-	UIImageView* bgImage;
-	
-	UIImage* image;
-	
+	IBOutlet UIImageView* bgImage;
+		
 	GameBumpConnector* bumpObject;
 }
 
