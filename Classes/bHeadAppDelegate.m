@@ -17,8 +17,6 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application 
 {    
-	sleep(3);
-	
 	[window addSubview:tabBarController.view];
     // Override point for customization after application launch
     [window makeKeyAndVisible];
