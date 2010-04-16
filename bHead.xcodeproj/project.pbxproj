@@ -47,6 +47,12 @@
 		2DD238F411630CB800EC030E /* ScoreController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD238F211630CB800EC030E /* ScoreController.xib */; };
 		2DD239141163112700EC030E /* subclassChallengeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD239121163112700EC030E /* subclassChallengeController.m */; };
 		2DD239151163112700EC030E /* subclassChallengeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD239131163112700EC030E /* subclassChallengeController.xib */; };
+		DEE451A61178C50800B37734 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE451A51178C50800B37734 /* Default.png */; };
+		DEE451BF1178CE5C00B37734 /* youdiebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE451BE1178CE5C00B37734 /* youdiebackground.png */; };
+		DEE451C11178CE6C00B37734 /* youlivebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE451C01178CE6C00B37734 /* youlivebackground.png */; };
+		DEE4520C1178DC9F00B37734 /* lightsaber.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE4520B1178DC9F00B37734 /* lightsaber.png */; };
+		DEE4520E1178DCB300B37734 /* shotgun.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE4520D1178DCB300B37734 /* shotgun.png */; };
+		DEE452101178DCC800B37734 /* broadsword.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE4520F1178DCC800B37734 /* broadsword.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +105,12 @@
 		2DD239131163112700EC030E /* subclassChallengeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = subclassChallengeController.xib; path = Classes/subclassChallengeController.xib; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* bHead_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bHead_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* bHead-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "bHead-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		DEE451A51178C50800B37734 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DEE451BE1178CE5C00B37734 /* youdiebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youdiebackground.png; sourceTree = "<group>"; };
+		DEE451C01178CE6C00B37734 /* youlivebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youlivebackground.png; sourceTree = "<group>"; };
+		DEE4520B1178DC9F00B37734 /* lightsaber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightsaber.png; sourceTree = "<group>"; };
+		DEE4520D1178DCB300B37734 /* shotgun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shotgun.png; sourceTree = "<group>"; };
+		DEE4520F1178DCC800B37734 /* broadsword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broadsword.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +180,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEE4520F1178DCC800B37734 /* broadsword.png */,
+				DEE4520D1178DCB300B37734 /* shotgun.png */,
+				DEE4520B1178DC9F00B37734 /* lightsaber.png */,
+				DEE451C01178CE6C00B37734 /* youlivebackground.png */,
+				DEE451BE1178CE5C00B37734 /* youdiebackground.png */,
+				DEE451A51178C50800B37734 /* Default.png */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				2DD238ED11630C8D00EC030E /* ChallengeController.xib */,
 				2DD239131163112700EC030E /* subclassChallengeController.xib */,
@@ -292,6 +310,12 @@
 				2DB89EC5116BEE4400B618D6 /* BumpConfirmScreen.xib in Resources */,
 				2DB89EC6116BEE4400B618D6 /* BumpPromptScreen.xib in Resources */,
 				2DB89EC7116BEE4400B618D6 /* BumpStartScreen.xib in Resources */,
+				DEE451A61178C50800B37734 /* Default.png in Resources */,
+				DEE451BF1178CE5C00B37734 /* youdiebackground.png in Resources */,
+				DEE451C11178CE6C00B37734 /* youlivebackground.png in Resources */,
+				DEE4520C1178DC9F00B37734 /* lightsaber.png in Resources */,
+				DEE4520E1178DCB300B37734 /* shotgun.png in Resources */,
+				DEE452101178DCC800B37734 /* broadsword.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

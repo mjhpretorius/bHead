@@ -58,8 +58,23 @@
 
 - (void)setLabels 
 {
+	NSString* winorlose = [bumpObject givewinorlose];
+	
+	CGRect myImageRect = CGRectMake(0.0f, 0.0f, 320.0f, 480.0f); 
+	bgImage = [[UIImageView alloc] initWithFrame:myImageRect];
+	if ([winorlose isEqualToString: @"WINNER"] ) {
+		[bgImage setImage:[UIImage imageNamed:@"youlivebackground.png"]];
+		[self.view addSubview:bgImage]; 
+		[self.view sendSubviewToBack:bgImage];
+	}
+	else {
+		[bgImage setImage:[UIImage imageNamed:@"youdiebackground.png"]];
+		[self.view addSubview:bgImage]; 
+		[self.view sendSubviewToBack:bgImage];
+	}
+	
 	opponentSelection.text = [NSString stringWithFormat:@"Your opponent used %@", [bumpObject giveOpponentWeapon]];
-	gameOutcome.text = [NSString stringWithFormat:@"You %@", [bumpObject givewinorlose]];
+	gameOutcome.text = [NSString stringWithFormat:@"You %@", winorlose];
 }
 
 - (NSString*)giveotherWeapon{
