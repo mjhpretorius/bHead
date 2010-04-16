@@ -20,6 +20,8 @@
 	NSString* yourweaponText;
 	UIImageView* bgImage;
 	
+	UIImage* image;
+	
 	GameBumpConnector* bumpObject;
 }
 
