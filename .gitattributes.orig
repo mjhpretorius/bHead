@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+*.pbxproj -crlf -diff -merge
+=======
+*.pbxproj -crlf -diff -merge
+>>>>>>> 3a9d4f270427bceb72be3b5d9868c1fafe32f35c
