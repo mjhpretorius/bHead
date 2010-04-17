@@ -55,6 +55,7 @@
 		DEE452101178DCC800B37734 /* broadsword.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE4520F1178DCC800B37734 /* broadsword.png */; };
 		DEE452201178DEEF00B37734 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE4521F1178DEEF00B37734 /* background.png */; };
 		DEE452331178E2E700B37734 /* youtiebackground.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE452321178E2E700B37734 /* youtiebackground.png */; };
+		DEE4525A1178EAC800B37734 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE452591178EAC800B37734 /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,7 @@
 		DEE4520F1178DCC800B37734 /* broadsword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = broadsword.png; sourceTree = "<group>"; };
 		DEE4521F1178DEEF00B37734 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		DEE452321178E2E700B37734 /* youtiebackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtiebackground.png; sourceTree = "<group>"; };
+		DEE452591178EAC800B37734 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DEE452591178EAC800B37734 /* Icon.png */,
 				DEE4521F1178DEEF00B37734 /* background.png */,
 				DEE4520F1178DCC800B37734 /* broadsword.png */,
 				DEE4520D1178DCB300B37734 /* shotgun.png */,
@@ -324,6 +327,7 @@
 				DEE452101178DCC800B37734 /* broadsword.png in Resources */,
 				DEE452201178DEEF00B37734 /* background.png in Resources */,
 				DEE452331178E2E700B37734 /* youtiebackground.png in Resources */,
+				DEE4525A1178EAC800B37734 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
