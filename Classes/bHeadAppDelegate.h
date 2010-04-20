@@ -10,7 +10,7 @@
 
 @interface bHeadAppDelegate : NSObject <UIApplicationDelegate> 
 {
-	IBOutlet UITabBarController		*tabBarController;
+	IBOutlet UINavigationController		*myNavViewController;
 	UIWindow						*window;
 }
 

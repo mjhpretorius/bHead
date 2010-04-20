@@ -19,7 +19,7 @@
 {    
 	sleep(3);
 	
-	[window addSubview:tabBarController.view];
+	[window addSubview:myNavViewController.view];
     // Override point for customization after application launch
     [window makeKeyAndVisible];
 }
