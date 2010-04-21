@@ -41,7 +41,7 @@
 - (void)changeLabel:(NSNotification*)notification
 {
 	UIButton* wb = (UIButton*)[notification object];
-	weaponSelection.text = [NSString stringWithFormat:@"you picked %@", [wb currentTitle]];
+	weaponSelection.text = [NSString stringWithFormat:@" You: %@", [wb currentTitle]];
 	opponentSelection.text = @"";
 	gameOutcome.text = @"";
 	//NSLog([NSString stringWithFormat:@"Sent: %@", [wb currentTitle]]);
@@ -70,11 +70,11 @@
 		[bgImage setImage:[UIImage imageNamed:@"youdiebackground.png"]];
 	} else 
 	{
-		[bgImage setImage:[UIImage imageNamed:@"youtiebackground.png"]];
+		[bgImage setImage:[UIImage imageNamed:@"tiebackground.png"]];
 	}
 	
-	opponentSelection.text = [NSString stringWithFormat:@"Your opponent used %@", [bumpObject giveOpponentWeapon]];
-	gameOutcome.text = [NSString stringWithFormat:@"You %@", winorlose];
+	opponentSelection.text = [NSString stringWithFormat:@"Them: %@", [bumpObject giveOpponentWeapon]];
+	//gameOutcome.text = [NSString stringWithFormat:@"Result: %@", winorlose];
 
 //	[self.view addSubview:bgImage]; 
 	[self.view sendSubviewToBack:bgImage];

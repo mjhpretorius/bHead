@@ -179,6 +179,7 @@
 					<string>-2.CustomClassName</string>
 					<string>12.CustomClassName</string>
 					<string>12.IBPluginDependency</string>
+					<string>17.IBEditorWindowLastContentRect</string>
 					<string>17.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
 					<string>2.IBAttributePlaceholdersKey</string>
@@ -193,6 +194,7 @@
 					<string>UIResponder</string>
 					<string>ChallengeController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>{{371, 342}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSMutableDictionary">

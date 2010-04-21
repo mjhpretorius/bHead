@@ -45,6 +45,10 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrameSize">{320, 460}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MCAwAA</bytes>
+						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<int key="IBUIContentMode">4</int>
@@ -53,15 +57,24 @@
 					<object class="IBUILabel" id="489729558">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 220}, {280, 21}}</string>
+						<string key="NSFrame">{{0, 395}, {320, 22}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<object class="NSColor" key="IBUIBackgroundColor" id="680333401">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
+						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">default</string>
-						<object class="NSColor" key="IBUITextColor" id="680333401">
+						<string key="IBUIText">  default</string>
+						<object class="NSFont" key="IBUIFont" id="1054499085">
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">12</double>
+							<int key="NSfFlags">16</int>
+						</object>
+						<object class="NSColor" key="IBUITextColor" id="984834671">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAwIDAAA</bytes>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -70,16 +83,19 @@
 					<object class="IBUILabel" id="857246970">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 249}, {280, 21}}</string>
+						<string key="NSFrame">{{149, 395}, {164, 22}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<reference key="IBUIBackgroundColor" ref="680333401"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">oponent selection</string>
-						<reference key="IBUITextColor" ref="680333401"/>
+						<string key="IBUIText">    oponent selection </string>
+						<reference key="IBUIFont" ref="1054499085"/>
+						<reference key="IBUITextColor" ref="984834671"/>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
+						<int key="IBUITextAlignment">2</int>
 					</object>
 					<object class="IBUILabel" id="830613104">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -166,10 +182,10 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="489729558"/>
-							<reference ref="857246970"/>
 							<reference ref="830613104"/>
 							<reference ref="987740162"/>
+							<reference ref="489729558"/>
+							<reference ref="857246970"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -223,7 +239,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>subclassChallengeController</string>
 					<string>UIResponder</string>
-					<string>{{618, 80}, {320, 480}}</string>
+					<string>{{578, 83}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

@@ -57,7 +57,7 @@
 					<object class="IBUIButton" id="1042285577">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{12, 13}, {296, 82}}</string>
+						<string key="NSFrame">{{12, 25}, {296, 82}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -90,7 +90,7 @@
 					<object class="IBUIButton" id="329079748">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{12, 124}, {296, 82}}</string>
+						<string key="NSFrame">{{12, 169}, {296, 82}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -113,7 +113,7 @@
 					<object class="IBUIButton" id="767116527">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{12, 242}, {296, 82}}</string>
+						<string key="NSFrame">{{12, 310}, {296, 82}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -223,10 +223,10 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1042285577"/>
-							<reference ref="767116527"/>
-							<reference ref="329079748"/>
 							<reference ref="1072108911"/>
+							<reference ref="767116527"/>
+							<reference ref="1042285577"/>
+							<reference ref="329079748"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
