@@ -46,7 +46,6 @@
 		2DB89EC7116BEE4400B618D6 /* BumpStartScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DB89EAF116BEE4400B618D6 /* BumpStartScreen.xib */; };
 		2DD238EE11630C8D00EC030E /* ChallengeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD238EC11630C8D00EC030E /* ChallengeController.m */; };
 		2DD238EF11630C8D00EC030E /* ChallengeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD238ED11630C8D00EC030E /* ChallengeController.xib */; };
-		2DD238F411630CB800EC030E /* ScoreController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD238F211630CB800EC030E /* ScoreController.xib */; };
 		2DD239141163112700EC030E /* subclassChallengeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD239121163112700EC030E /* subclassChallengeController.m */; };
 		2DD239151163112700EC030E /* subclassChallengeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DD239131163112700EC030E /* subclassChallengeController.xib */; };
 		DEE451A61178C50800B37734 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DEE451A51178C50800B37734 /* Default.png */; };
@@ -102,7 +101,6 @@
 		2DD238EB11630C8D00EC030E /* ChallengeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeController.h; sourceTree = "<group>"; };
 		2DD238EC11630C8D00EC030E /* ChallengeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeController.m; sourceTree = "<group>"; };
 		2DD238ED11630C8D00EC030E /* ChallengeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ChallengeController.xib; path = Classes/ChallengeController.xib; sourceTree = "<group>"; };
-		2DD238F211630CB800EC030E /* ScoreController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ScoreController.xib; path = Classes/ScoreController.xib; sourceTree = "<group>"; };
 		2DD239111163112700EC030E /* subclassChallengeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = subclassChallengeController.h; sourceTree = "<group>"; };
 		2DD239121163112700EC030E /* subclassChallengeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = subclassChallengeController.m; sourceTree = "<group>"; };
 		2DD239131163112700EC030E /* subclassChallengeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = subclassChallengeController.xib; path = Classes/subclassChallengeController.xib; sourceTree = "<group>"; };
@@ -193,7 +191,6 @@
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				2DD238ED11630C8D00EC030E /* ChallengeController.xib */,
 				2DD239131163112700EC030E /* subclassChallengeController.xib */,
-				2DD238F211630CB800EC030E /* ScoreController.xib */,
 				8D1107310486CEB800E47090 /* bHead-Info.plist */,
 				2DB89E97116BEE4400B618D6 /* Bump_Resources */,
 			);
@@ -288,7 +285,6 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2DD238EF11630C8D00EC030E /* ChallengeController.xib in Resources */,
-				2DD238F411630CB800EC030E /* ScoreController.xib in Resources */,
 				2DD239151163112700EC030E /* subclassChallengeController.xib in Resources */,
 				2DB89EB0116BEE4400B618D6 /* bump_button_blue.png in Resources */,
 				2DB89EB1116BEE4400B618D6 /* bump_close.png in Resources */,
